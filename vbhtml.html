@@ -1,0 +1,30 @@
+<!-- COLORED BY SPITFIRES VB 2 HTML PROGRAM --><BR><FONT COLOR="#000000"><TT><PRE>
+<FONT COLOR = "#008800">'Please Rate My Code - By SpitFire
+</FONT><FONT COLOR = "#000088">Option Explicit
+</FONT>
+<FONT COLOR = "#000088">Private Sub </FONT>Command1_Click()
+    <FONT COLOR = "#000088">Dim </FONT>s <FONT COLOR = "#000088">As String
+</FONT>    <FONT COLOR = "#000088">Dim </FONT>i <FONT COLOR = "#000088">As Integer
+</FONT>    <FONT COLOR = "#000088">Dim </FONT>lns() <FONT COLOR = "#000088">As String
+</FONT>    <FONT COLOR = "#000088">Dim </FONT>f <FONT COLOR = "#000088">As Long
+</FONT>    
+    s = Text1.Text
+    s = ProcessBlock(s)
+    f = FreeFile
+    <FONT COLOR = "#000088">Open </FONT>App.Path & "\vbhtml.html" <FONT COLOR = "#000088">For Output As </FONT>f
+    <FONT COLOR = "#000088">Print </FONT>#f, s
+    <FONT COLOR = "#000088">Close </FONT>f
+    frmSrcRichTextBox1.LoadFile (App.Path & "\vbhtml.html")
+Text1.Top = "5400"
+Command1.Top = "8400"
+Me.Height = "9180"
+Me.ScaleHeight = "8805"
+Web.Visible = <FONT COLOR = "#000088">True
+</FONT>    Web.Navigate App.Path & "\vbhtml.html"
+    frmSrc.Visible = <FONT COLOR = "#000088">True
+End Sub
+</FONT>
+
+
+</FONT></PRE></TT>
+
